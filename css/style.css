@@ -74,8 +74,8 @@ body {
     width: 100%;
     height: 820px;
     top: 0px;
-    animation-iteration-count: infinite;
     animation: snow1 18s infinite linear;
+    animation-iteration-count: infinite;
 }
 .box__snow{
     background-image: url('../img/Vector.svg');
@@ -93,8 +93,8 @@ body {
     width: 100%;
     background-image: url('../img/Vector.svg');
     height: 393px;
-    animation-iteration-count: infinite;
     animation: box__snow 18s infinite linear;
+    animation-iteration-count: infinite;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -115,6 +115,7 @@ body {
     60% {background-position: 60% -300px;}
     to{background-position: 70% -700px;}
 }
+
 
 .fon__img{
     z-index: -1;
@@ -356,6 +357,7 @@ body {
     }
     .fon__title{
         font-size: 44px;
+        line-height: 55px;
     }
     .fon__btn{
         font-size: 18px;
@@ -382,6 +384,7 @@ body {
     }
     .fon__title{
         font-size: 40px;
+        line-height: 48px;
     }
     .fon__btn{
         font-size: 16px;
@@ -420,6 +423,7 @@ body {
     }
     .fon__title{
         font-size: 36px;
+        line-height: 42px;
     }
     .fon__btn{
         font-size: 15px;
@@ -512,7 +516,7 @@ body {
     }
     .fon__title{
         font-size: 34px;
-        line-height: 52px;
+        line-height: 42px;
     }
     .fon__btn{
         font-size: 14px;
@@ -558,6 +562,31 @@ body {
     }
 }
 @media (max-width: 730px) {
+    .header{
+        padding: 20px 0;
+    }
+    .fon__inner{
+        margin-top: 20px;
+    }
+    .fon{
+        display: flex;
+        flex-wrap:  wrap;
+    }
+    .fon__button{
+        padding-top: 10px;
+        margin-bottom: 60px;
+    }
+    .box{
+        padding-top: 0;
+    }
+    .fon__img .font{
+        height: 500px;
+    }
+    .fon__img{
+        width: 100%;
+        position: relative;
+        order: 2;
+    }
     .swiper{
         padding-top: 120px;
     }
@@ -567,9 +596,6 @@ body {
     .fon__title{
         font-size: 48px;
         line-height: 62px;
-    }
-    .fon__inner{
-        margin-top: 60px;
     }
     .fon__subheader{
         max-width: 549px;
@@ -587,8 +613,8 @@ body {
         background-size: auto;
         background-position: center;
     }
-    .box{
-        padding-top: 120px;
+    .fon{
+        margin-bottom: 80px;
     }
 }
 @media (max-width: 560px) {
@@ -600,26 +626,29 @@ body {
         line-height: 52px;
     }
     .fon__inner{
-        margin-top: 60px;
+        margin-top: 20px;
     }
     .fon__subheader{
         max-width: 449px;
         padding-bottom: 60px;
+    }
+    .fon__header{
+        padding-bottom: 20px;
     }
     .fon__subheader::before{
         width: 72px;
         margin-right: 23px;
     }
     .fon__img .font{
-        height: 700px;
-    }
-    .box{
-        padding-top: 80px;
+        height: 300px;
     }
 }
 @media (max-width: 460px) {
-    .fon__img .font{
-        height: 600px;
+    .fon{
+        margin-bottom: 40px;
+    }
+    .fon__subheader{
+        padding-bottom: 20px;
     }
     .box{
         padding-top: 0px;
@@ -659,11 +688,11 @@ body {
         line-height: 32px;
     }
     .fon__inner{
-        margin-top: 60px;
+        margin-top: 20px;
     }
     .fon__subheader{
         max-width: 249px;
-        padding-bottom: 60px;
+        padding-bottom: 20px;
     }
     .fon__subheader::before{
         display: none;
@@ -674,6 +703,9 @@ body {
     }
     .fon__btn{
         padding: 18px 20px;
+    }
+    .fon__img .font{
+        height: 300px;
     }
 }
 
