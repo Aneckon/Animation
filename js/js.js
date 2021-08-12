@@ -15,7 +15,7 @@ function initSwiper() {
     var screenWidth = $(window).width();
     if (screenWidth < 1100 && mySwiper == undefined) {
         mySwiper = new Swiper('.mySwiper', {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 30,
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -27,7 +27,7 @@ function initSwiper() {
                     slidesPerView: 2,
                     spaceBetween: 20
                 },
-                10: {
+                320: {
                     slidesPerView: 1,
                     spaceBetween: 10
                 }
