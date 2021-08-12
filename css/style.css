@@ -303,7 +303,9 @@ body {
   .swiper-button-next, .swiper-button-prev{
     display: none !important;
 }
-
+.header__button-mobile{
+    display: none;
+}
 
 @media (max-width: 1600px) {
     .header__list{
@@ -402,6 +404,9 @@ body {
     }
 }
 @media (max-width: 1100px) {
+    .box__inner .col-xl-2{
+        display: none;
+    }
     .swiper-slide{
         max-width: 480px;
     }
@@ -410,17 +415,6 @@ body {
     }
     .box__inner .col-10{
         width: 100%;
-    }
-    .box__inner-item{
-    }
-    .swiper-container{
-    }
-    .swiper-wrapper{
-
-    }
-    .box__inner .row{
-    }
-    .swiper-slide{
     }
     .header{
         padding-left: 0px;
@@ -444,9 +438,6 @@ body {
         width: 72px;
         margin-right: 53px;
     }
-    .box__inner .col-2{
-        display: none;
-    }
     .box{
         padding-left: 0;
     }
@@ -455,10 +446,11 @@ body {
     }
     .header__list{
         display: none;
-        position: absolute;
+        position: fixed;
         top: 0px;
-        left: 0;
+        right: 0;
         max-width: 100%;
+        width: 100%;
         margin-left: 0;
         text-align: center;
         height: 100vh;
@@ -466,17 +458,22 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background: linear-gradient(179.73deg, #A7D5FE 6.29%, #3C93D1 128.53%);
     }
-    .color{
-        background: rgb(0, 0, 0, 0.5);
-        z-index: 10;
+    .fixed{
+        overflow-y: hidden;
     }
     .header__button{
         display: none;
-        position: absolute;
-        justify-content: center;
-        text-align: center;
-        top: 500px;
+    }
+    .header__button-mobile{
+        display: block;
+        margin-top: 30px;
+    }
+    .active{
+        display: block;
+    }
+    .header__btn{
         width: 100%;
     }
     .header__link{
@@ -489,6 +486,13 @@ body {
         height: 30px;
         display: block;
         margin-left: 10px;
+    }
+    .menu__remove{
+        position: relative;
+        background: url('../img/remove.svg') no-repeat center;
+        width: 30px;  
+        height: 30px;
+        display: block;
     }
     .menu__open{
         display: flex;
@@ -529,6 +533,9 @@ body {
     }
     .fon__subheader{
         max-width: 349px;
+    }
+    .swiper-slide{
+        max-width: 380px;
     }
 }
 @media (max-width: 930px) {
@@ -611,7 +618,7 @@ body {
         height: 700px;
     }
     .box{
-        padding-top: 20px;
+        padding-top: 80px;
     }
 }
 @media (max-width: 460px) {

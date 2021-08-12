@@ -1,9 +1,10 @@
 $(document).ready(function () {
     $('.menu__burger-img').click(function () {
         $('.menu__burger-img').toggleClass('menu__open');
+        $('.menu__burger-img').toggleClass('menu__remove');
         $('.header__list').toggleClass('menu__open');
-        $('.header__button').toggleClass('menu__open');
-        $('.container').toggleClass('color');
+        $('.header__button').toggleClass('active');
+        $('body').toggleClass('fixed');
     });
 });
 
